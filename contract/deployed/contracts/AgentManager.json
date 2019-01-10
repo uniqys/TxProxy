@@ -1,0 +1,96 @@
+{
+  "contractName": "AgentManager",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "proxy",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "ownerToAgent",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_proxy",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_x",
+          "type": "address"
+        }
+      ],
+      "name": "newAgent",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "agentOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "schemaVersion": "2.0.1",
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xadbb912b649afd932691b1617d95637ad3ed72f0",
+      "transactionHash": "0x08789d2b0469a205766fe5851c1593253a68df610ad0b786d53a82441dc1dff1"
+    }
+  }
+}

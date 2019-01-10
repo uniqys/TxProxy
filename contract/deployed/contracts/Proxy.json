@@ -1,0 +1,99 @@
+{
+  "contractName": "Proxy",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "nonce",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_nonce",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_result",
+          "type": "bool"
+        }
+      ],
+      "name": "Called",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_nonce",
+          "type": "uint256"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_func",
+          "type": "bytes4"
+        },
+        {
+          "name": "_args",
+          "type": "bytes"
+        },
+        {
+          "name": "_v",
+          "type": "uint8"
+        },
+        {
+          "name": "_r",
+          "type": "bytes32"
+        },
+        {
+          "name": "_s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "send",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "schemaVersion": "2.0.1",
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xf9fe2f690ad69ed0710274caad8136229656a2fb",
+      "transactionHash": "0x30b4b15b5ff584f4b10e9f22161ad343a36baed1489e13fbc1c47b5f4f5f1a74"
+    }
+  }
+}

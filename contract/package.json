@@ -1,0 +1,26 @@
+{
+  "name": "relay-contract",
+  "version": "0.1.0",
+  "description": "relay transaction contract",
+  "author": "Bit Factory, Inc.",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "yarn restoreDeployed",
+    "build": "truffle compile",
+    "test": "./test/run",
+    "migrate": "yarn truffle migrate",
+    "saveDeployed": "node scripts/save-deployed-contracts.js",
+    "restoreDeployed": "node scripts/restore-deployed-contracts.js",
+    "predeploy": "yarn restoreDeployed",
+    "deploy": "yarn migrate --network ropsten",
+    "postdeploy": "yarn saveDeployed"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "fs-path": "^0.0.24",
+    "ganache-cli": "^6.1.8",
+    "solhint": "^1.4.0",
+    "truffle": "^4.1.14"
+  }
+}
