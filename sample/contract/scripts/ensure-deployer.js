@@ -52,12 +52,12 @@ async function ensureBalance(address) {
   console.log(`ETH残高[${address}]: ${balance}(wei)`)
   if (checkEnoughBalance(balance)) return
   console.log('アカウントにETHを受け取ります')
-  const res = await axios.post('https://ropsten.faucet.b9lab.com/tap', { toWhom: address })
+  const res = await axios.get(`https://faucet.ropsten.be/donate/${address}`)
   if (res.status !== 200) {
     console.error('ETH受け取りに失敗しました')
     return
   }
-  console.log(`ETH受け取りトランザクション: ${res.data.txHash}`)
+  console.log(`ETH受け取りトランザクション: ${res.data.txhash}`)
   const newBalance = await waitForGetEth(address, balance)
   console.log('ETH受け取りが完了しました')
   console.log(`ETH残高[${address}]: ${newBalance}(wei)`)
